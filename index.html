@@ -78,6 +78,7 @@
 </div>
 
 <script>
+
     function appendValue(value) {
         document.getElementById("display").value += value;
     }
@@ -94,6 +95,23 @@
             alert("Invalid Expression");
         }
     }
+
+    function square() {
+        let value = document.getElementById("display").value;
+
+        if (value !== "") {
+            document.getElementById("display").value = value * value;
+        }
+    }
+
+    function sqrt() {
+        let value = document.getElementById("display").value;
+
+        if (value !== "") {
+            document.getElementById("display").value = Math.sqrt(value);
+        }
+    }
+
 </script>
 
 </body>
